@@ -21,6 +21,7 @@ class MinefieldController {
      * Click callback for given cell
      */
     public onClick = ($event:JQueryEventObject, cellData:api.IMinefieldCell):void => {
+        this.swMinefieldService.reveal(cellData, this.minefield);
 
     };
 
